@@ -1,5 +1,5 @@
 from leaderboard_compare import compare_leaderboard_stats
-from utils import generate_date_range
+from utils import generate_date_range, today
 
 # Replace with your NYT-S cookie, which can be found in the browser dev tools
 # after logging in to the NY Times crossword site.
@@ -8,7 +8,7 @@ from utils import generate_date_range
 COOKIE = "<YOUR_COOKIE_HERE>"
 
 if __name__ == "__main__":
-    dates = generate_date_range("2024-06-01","2024-10-28")
+    dates = generate_date_range("2024-01-01",today)
 
     # Replace with usernames present in your NYT Mini Crossword leaderboard
     usernames = ["<YOUR_USERNAMES_HERE>", "<AND_MAYBE_HERE>"]

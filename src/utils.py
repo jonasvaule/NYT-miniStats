@@ -18,3 +18,6 @@ def generate_date_range(start_date, end_date):
                  for i in range((end - start).days + 1)]
     
     return date_list
+
+def today():
+    return datetime.now().strftime("%Y-%m-%d")
